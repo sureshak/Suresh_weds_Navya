@@ -24,6 +24,8 @@ Table of Contents:
 $(window).on('load', function() {
 	$('.loader').delay(600).fadeOut('slow');
 	imgIntoBg();
+    updateClock();
+
 });
 //jQuery to collapse the navbar on scroll
 var newNav = $('nav.clone');
@@ -114,7 +116,7 @@ function initializeClock(id, endtime) {
 	var timeinterval = setInterval(updateClock, 1000);
 }
 // set your wedding date here
-var deadline = 'December 17 2017 17:30:00 GMT+0300';
+var deadline = 'February 03 2018 11:59:00 GMT+540';
 if (countdown){
 	initializeClock('timer', deadline);
 }
